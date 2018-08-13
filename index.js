@@ -11,4 +11,7 @@ const okResponse = (ctx) => {
 };
 router.get('/liveness', okResponse).get('/readiness', okResponse);
 app.use(router.routes());
+
+
+
 app.listen(process.env.PORT);
